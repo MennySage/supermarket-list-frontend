@@ -3,12 +3,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
+  width: 97%;
   height: 58px;
   min-height: 58px;
   padding: 0px 12px;
-  background-color: #7785db;
+  background-color: gainsboro;
   border-radius: 12px;
+  border-color: #7785db;
+  border-style: solid;
   margin-bottom: 24px;
   cursor: pointer;
 }
@@ -28,6 +30,7 @@
   display: flex;
   width: 97%;
   flex-direction: column;
+  padding-left: 12px;
 }
 
 .list-card-title {
