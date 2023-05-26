@@ -11,7 +11,7 @@
   height: 42px;
   border: 0px;
   cursor: pointer;
-  border: 1px solid #7785db;
+  border: 1px solid #6bbd49;
 }
 
 @media screen and (max-width: 420px) {
@@ -21,13 +21,13 @@
 }
 
 .main {
-  background-color: #7785db;
+  background-color: #6bbd49;
   color: white;
 }
 
 .outline {
   background-color: #f2f4ff;
-  color: #7785db;
+  color: #6bbd49;
 }
 
 .button-icon {
