@@ -1,20 +1,21 @@
 import "./index.css";
 
-export const ListCard = (props, onClick) => {
-  const { item } = props;
-
+export const ListCard = ({ item, onClick, onCheckedItem }) => {
   return (
-    <div className="list-card-container" onClick={() => onClick}>
+    <div className="list-card-container">
       <img
         className="checkbox"
+        alt="checkbox-icon"
         src={`/images/${item?.checked ? "checked.svg" : "unchecked.svg"}`}
-        alt="checked-item"
+        onclick={() => onCheckedItem(item)}
       />
       <div className="list-card-text-container">
         <span className="list-card-title">{item.name}</span>
         <span className="list-card-subtitle">{item.quantity} unidades </span>
       </div>
-      <img src="/images/arrow.svg" alt="arrow-icon" className="arrow-icon" />
+      <div className="arrow-icon-container" onClick={() => onClick(item)}>
+        <img src="/images/arrow.svg" alt="arrow-icon" className="arrow-icon" />
+      </div>
     </div>
   );
 };
